@@ -8,7 +8,7 @@
 
 # 项目运行
 
-* git clone --depth 1 https://github.com/duxianwei520/react.git    
+* git clone --depth 1 https://github.com/keeeeline/ASimpleManagementSystemOfStudents.git   
 
 * cd mytask  
 
