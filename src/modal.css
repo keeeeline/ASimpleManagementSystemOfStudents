@@ -1,0 +1,57 @@
+.modalWrap{
+	width:100vw;
+	height:100vh;
+	background-color:grey;
+	position:fixed;
+	top:0;
+	left:0;
+}
+.modalStyle{
+    width:400px;
+	height:300px;
+	border:1px solid black;
+	margin:auto;
+	position:absolute;
+	left:50%;
+	top:50%;
+	transform:translate(-50%,-50%);
+	border-radius:10px;
+}
+.modalNav{
+ 	height:40px;
+	background:black;
+	border-radius:10px;
+}
+.modalContent{
+	height:160px;
+	margin:auto;
+}
+.item{
+	width:215px;
+	margin:0 auto;
+	margin-top:30px;
+}
+.font{
+	margin-left:10px;
+}
+.buttonContent{
+	overflow:hidden;
+	width:215px;
+	margin:0 auto;
+}
+.modalButton{
+	width:70px;
+	height:30px;
+	float:right;
+	margin-right:20px;
+	margin-top:10px;
+	color:white;
+	font-size:16px;
+	border-radius:10px;
+	background-color:black;
+}
+.deleteContent{
+	font-size:20px;
+	text-align:center;
+	padding-top:70px;
+}
