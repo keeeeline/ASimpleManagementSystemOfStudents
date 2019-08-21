@@ -8,21 +8,20 @@
 
 # 项目运行
 
-* git clone --depth 1 https://github.com/keeeeline/ASimpleManagementSystemOfStudents.git   
+- git clone https://github.com/keeeeline/ASimpleManagementSystemOfStudents.git
 
-* cd mytask  
+- cd mytask
 
-> 由于对公用的npm库做了dll化，所以要先运行npm  run dll生成相应的代码  
+> 由于对公用的 npm 库做了 dll 化，所以要先运行 npm run dll 生成相应的代码
 
-* npm install  
+- npm install
 
-* npm run dll  
+- npm run dll
 
-### 最后的构建命令  
+### 最后的构建命令
 
-npm run dev  
+npm run dev
 
 # 说明
 
 > 开发环境 win8.1 Chrome75.0.3770.142（正式版本） （64 位） node.js 10.15.3
-

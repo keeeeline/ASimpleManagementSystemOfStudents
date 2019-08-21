@@ -1,52 +1,52 @@
-.mainPage{
-	width:700px;
-	height:900px;
-	background-color:white;
-	border-radius:30px;
-	margin:auto;
+.mainPage {
+  width: 700px;
+  height: 900px;
+  background-color: white;
+  border-radius: 30px;
+  margin: auto;
 }
-.tableNav{
-	width:700px;
-	height:50px;
-	background-color:black;
-	border-radius:30px;
+.tableNav {
+  width: 700px;
+  height: 50px;
+  background-color: black;
+  border-radius: 30px;
 }
-.buttonContent{
-	width:700px;
-	height:50px;
+.buttonContent {
+  width: 700px;
+  height: 50px;
 }
-.tableButton{
-	width:70px;
-	height:30px;
-	float:right;
-	margin-right:20px;
-	margin-top:10px;
-	color:white;
-	font-size:16px;
-	border-radius:10px;
-	background-color:black;
+.tableButton {
+  width: 70px;
+  height: 30px;
+  float: right;
+  margin-right: 20px;
+  margin-top: 10px;
+  color: white;
+  font-size: 16px;
+  border-radius: 10px;
+  background-color: black;
 }
-.tableContent{
-	width:650px;	
-	margin:auto;
-	text-align:center;
+.tableContent {
+  width: 650px;
+  margin: auto;
+  text-align: center;
 }
-.tableStyle{
-    border-top:2px solid black;
-    border-bottom:2px solid black;
+.tableStyle {
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
 }
-.tableTh{
-	width:180px;
+.tableTh {
+  width: 180px;
 }
-.tableOptions{
-    width:120px;
+.tableOptions {
+  width: 120px;
 }
-.deleteOption{
-	color:blue;
-	cursor:default;
-	margin-right:5px;
+.deleteOption {
+  color: blue;
+  cursor: default;
+  margin-right: 5px;
 }
-.modifyOption{
-	color:blue;
-	cursor:default;
+.modifyOption {
+  color: blue;
+  cursor: default;
 }
