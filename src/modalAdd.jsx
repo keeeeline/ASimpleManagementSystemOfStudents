@@ -15,12 +15,17 @@ class ModalAdd extends React.Component {
 
     render() {
         return (
-            <div className={modal.modalWrap} style={{display: this.props.visible}}>
+            <div className={modal.modalWrap}>
                 <div className={modal.modalStyle}>
-                    <div className={modal.modalNav}></div>
+                    <div className={modal.modalNav} />
                     <form onSubmit={(e) => {
                         e.preventDefault();
-                        this.props.addSubmit(e)
+                        let studentData={
+                            name:e.target.name.value,
+                            age:e.target.age.value,
+                            gender:e.target.gender.value
+                        }
+                        return this.props.onSubmit(studentData)
                     }}>
                         <div className={modal.modalContent}>
                             <div className={modal.item}><label>姓名<input className={modal.font} type="text" name="name"
@@ -31,9 +36,7 @@ class ModalAdd extends React.Component {
                                                                         required/></label></div>
                         </div>
                         <div className={modal.buttonContent}>
-                            <input className={modal.modalButton} type="button" value="取消" onClick={() => {
-                                this.props.back()
-                            }}/>
+                            <input className={modal.modalButton} type="button" value="取消" onClick={this.props.onClose}/>
                             <input className={modal.modalButton} type="submit" value="添加"/>
                         </div>
                     </form>

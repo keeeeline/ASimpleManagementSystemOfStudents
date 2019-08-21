@@ -20,7 +20,7 @@ class StudentsTable extends React.Component {
 				</div>
 				<div className={main.buttonContent}>
 					<input className={main.tableButton} type="button" value="增加" onClick={() => {
-						this.props.addButtonClick("add")
+						this.props.showModal("add")
 					}}/>
 				</div>
 				<div className={main.tableContent}>
@@ -29,19 +29,19 @@ class StudentsTable extends React.Component {
 							<th className={main.tableTh}>姓名</th>
 							<th className={main.tableTh}>年纪</th>
 							<th className={main.tableTh}>性别</th>
-							<th className={main.tableOptions}></th>
+							<th className={main.tableOptions} />
 						</tr>
 						{
-							this.props.students.map((student, i) => {
+							this.props.studentsList.map((student, i) => {
 								return (
 									<tr className={main.tableTr}>
 										<td>{student.name}</td>
 										<td>{student.age}</td>
 										<td>{student.gender}</td>
 										<td><span className={main.deleteOption}
-												  onClick={() => this.props.addButtonClick("delete", i)}>删除</span><span
+												  onClick={() => this.props.showModal("delete", i)}>删除</span><span
 											className={main.modifyOption}
-											onClick={() => this.props.addButtonClick("modify", i)}>修改</span></td>
+											onClick={() => this.props.showModal("modify", i)}>修改</span></td>
 									</tr>
 								)
 							})

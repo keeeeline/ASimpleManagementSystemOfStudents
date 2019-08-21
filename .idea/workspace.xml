@@ -1,7 +1,75 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c5e59984-ade8-4b82-801c-d064064bb87c" name="Default" comment="" />
+    <list default="true" id="c5e59984-ade8-4b82-801c-d064064bb87c" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.GIT" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/webpack.dev.conf.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/webpack.dev.conf.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mobx/lib/api/action.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mobx/lib/api/action.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mobx/lib/api/actiondecorator.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mobx/lib/api/actiondecorator.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mobx/lib/api/autorun.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mobx/lib/api/autorun.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mobx/lib/api/become-observed.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mobx/lib/api/become-observed.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mobx/lib/api/computed.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mobx/lib/api/computed.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mobx/lib/api/configure.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mobx/lib/api/configure.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mobx/lib/api/decorate.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mobx/lib/api/decorate.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mobx/lib/api/extendobservable.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mobx/lib/api/extendobservable.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mobx/lib/api/extras.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mobx/lib/api/extras.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mobx/lib/api/flow.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mobx/lib/api/flow.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mobx/lib/api/intercept-read.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mobx/lib/api/intercept-read.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mobx/lib/api/intercept.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mobx/lib/api/intercept.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mobx/lib/api/iscomputed.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mobx/lib/api/iscomputed.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mobx/lib/api/isobservable.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mobx/lib/api/isobservable.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mobx/lib/api/object-api.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mobx/lib/api/object-api.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mobx/lib/api/observable.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mobx/lib/api/observable.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mobx/lib/api/observabledecorator.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mobx/lib/api/observabledecorator.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mobx/lib/api/observe.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mobx/lib/api/observe.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mobx/lib/api/tojs.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mobx/lib/api/tojs.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mobx/lib/api/trace.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mobx/lib/api/trace.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mobx/lib/api/transaction.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mobx/lib/api/transaction.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mobx/lib/api/when.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mobx/lib/api/when.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mobx/lib/core/action.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mobx/lib/core/action.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mobx/lib/core/atom.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mobx/lib/core/atom.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mobx/lib/core/computedvalue.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mobx/lib/core/computedvalue.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mobx/lib/core/derivation.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mobx/lib/core/derivation.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mobx/lib/core/globalstate.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mobx/lib/core/globalstate.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mobx/lib/core/observable.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mobx/lib/core/observable.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mobx/lib/core/reaction.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mobx/lib/core/reaction.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mobx/lib/core/spy.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mobx/lib/core/spy.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mobx/lib/internal.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mobx/lib/internal.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mobx/lib/mobx.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mobx/lib/mobx.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mobx/lib/mobx.es6.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mobx/lib/mobx.es6.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mobx/lib/mobx.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mobx/lib/mobx.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mobx/lib/mobx.js.flow" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mobx/lib/mobx.js.flow" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mobx/lib/mobx.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mobx/lib/mobx.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mobx/lib/mobx.module.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mobx/lib/mobx.module.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mobx/lib/mobx.umd.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mobx/lib/mobx.umd.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mobx/lib/mobx.umd.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mobx/lib/mobx.umd.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mobx/lib/types/dynamicobject.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mobx/lib/types/intercept-utils.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mobx/lib/types/intercept-utils.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mobx/lib/types/listen-utils.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mobx/lib/types/listen-utils.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mobx/lib/types/modifiers.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mobx/lib/types/modifiers.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mobx/lib/types/observablearray.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mobx/lib/types/observablearray.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mobx/lib/types/observablemap.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mobx/lib/types/observablemap.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mobx/lib/types/observableobject.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mobx/lib/types/observableobject.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mobx/lib/types/observableset.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mobx/lib/types/observableset.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mobx/lib/types/observablevalue.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mobx/lib/types/observablevalue.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mobx/lib/types/type-utils.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mobx/lib/types/type-utils.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mobx/lib/utils/comparer.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mobx/lib/utils/comparer.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mobx/lib/utils/decorators.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mobx/lib/utils/eq.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mobx/lib/utils/eq.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mobx/lib/utils/iterable.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mobx/lib/utils/iterable.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mobx/lib/utils/utils.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mobx/lib/utils/utils.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/prop-types/lib/ReactPropTypesSecret.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/prop-types/lib/ReactPropTypesSecret.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/react-is/cjs/react-is.development.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/react-is/cjs/react-is.development.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/react-is/cjs/react-is.production.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/react-is/cjs/react-is.production.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/react-is/umd/react-is.development.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/react-is/umd/react-is.development.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/react-is/umd/react-is.production.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/react-is/umd/react-is.production.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/.babelrc" beforeDir="false" afterPath="$PROJECT_DIR$/src/.babelrc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modal.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modal.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modalAdd.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modalAdd.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/table.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/table.jsx" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,6 +84,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="JsFlowSettings">
     <service-enabled>true</service-enabled>
     <exe-path />
@@ -23,12 +94,22 @@
     <auto-save>true</auto-save>
   </component>
   <component name="ProjectId" id="1PPibQ4yKJNVSiuyuvUmxBh4pRM" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="prettierjs.PrettierConfiguration.NodeInterpreter" value="project" />
+    <property name="prettierjs.PrettierConfiguration.Package" value="/usr/local/lib/node_modules/prettier" />
+    <property name="settings.editor.selected.configurable" value="settings.javascript.prettier" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -59,11 +140,22 @@
       <workItem from="1565783304450" duration="1220000" />
       <workItem from="1565849976097" duration="26160000" />
       <workItem from="1565960462469" duration="369000" />
-      <workItem from="1566180873227" duration="258000" />
+      <workItem from="1566180873227" duration="55026000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

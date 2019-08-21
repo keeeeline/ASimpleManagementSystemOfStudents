@@ -14,41 +14,24 @@ import PropTypes from 'prop-types'
 class Modal extends React.Component {
     constructor(props) {
         super(props)
-        this.state = {
-            name: this.props.students.name,
-            age: this.props.students.age,
-            gender: this.props.students.gender,
-        }
-        //this.change = this.change.bind(this)
-        this.deleteModal = this.deleteModal.bind(this)
-        this.modifyModal = this.modifyModal.bind(this)
     }
 
-    /*change(event, tag) {
-        console.log()
-        this.setState({
-            [tag]: event.target.value
-        })
-    }*/
-
-    deleteModal() {
+    renderDeleteModal() {
         return (
-            <div className={modal.modalWrap} style={{display: this.props.visible}}>
+            <div className={modal.modalWrap}>
                 <div className={modal.modalStyle}>
-                    <div className={modal.modalNav}></div>
+                    <div className={modal.modalNav} />
                     <form onSubmit={(e) => {
                         e.preventDefault();
-                        this.props.deleteSubmit(this.props.indexOfStu, e)
+                        return this.props.onSubmit()
                     }}>
                         <div className={modal.modalContent}>
                             <div className={modal.deleteContent}>
-                                确定要删除{this.state.name}的信息吗？
+                                确定要删除{this.props.name}的信息吗？
                             </div>
                         </div>
                         <div className={modal.buttonContent}>
-                            <input className={modal.modalButton} type="button" value="取消" onClick={() => {
-                                this.props.back()
-                            }}/>
+                            <input className={modal.modalButton} type="button" value="取消" onClick={this.props.onClose}/>
                             <input className={modal.modalButton} type="submit" value="确定"/>
                         </div>
                     </form>
@@ -57,30 +40,33 @@ class Modal extends React.Component {
 
     }
 
-    modifyModal() {
+    renderModifyModal() {
         return (
-            <div className={modal.modalWrap} style={{display: this.props.visible}}>
+            <div className={modal.modalWrap} >
                 <div className={modal.modalStyle}>
-                    <div className={modal.modalNav}></div>
+                    <div className={modal.modalNav} />
                     <form onSubmit={(e) => {
                         e.preventDefault();
-                        return this.props.modifySubmit(this.props.indexOfStu, e)
+                        let studentData={
+                            name:e.target.name.value,
+                            age:e.target.age.value,
+                            gender:e.target.gender.value
+                        };
+                        return this.props.onSubmit(studentData,this.props.indexOfStu)
                     }}>
                         <div className={modal.modalContent}>
                             <div className={modal.item}><label>姓名<input className={modal.font} type="text"
-                                                                        defaultValue={this.state.name}
+                                                                        defaultValue={this.props.name}
                                                                         name="name" required/></label></div>
                             <div className={modal.item}><label>年纪<input className={modal.font} type="text"
-                                                                        defaultValue={this.state.age}
+                                                                        defaultValue={this.props.age}
                                                                         name="age" required/></label></div>
                             <div className={modal.item}><label>性别<input className={modal.font} type="text"
-                                                                        defaultValue={this.state.gender}
+                                                                        defaultValue={this.props.gender}
                                                                         name="gender" required/></label></div>
                         </div>
                         <div className={modal.buttonContent}>
-                            <input className={modal.modalButton} type="button" value="取消" onClick={() => {
-                                this.props.back()
-                            }}/>
+                            <input className={modal.modalButton} type="button" value="取消" onClick={this.props.onClose}/>
                             <input className={modal.modalButton} type="submit" value="确定"/>
                         </div>
                     </form>
@@ -89,20 +75,17 @@ class Modal extends React.Component {
     }
 
     render() {
-        let value = this.props.ModOrDel
-        name = this.props.students.name
-        if (value == "delete") {
-            return this.deleteModal()
-        } else if (value == "modify") {
-            return this.modifyModal()
+        let value = this.props.modifyOrDelete;
+        if (value === "delete") {
+            return this.renderDeleteModal()
+        } else if (value === "modify") {
+            return this.renderModifyModal()
         }
     }
 }
 
 Modal.defaultProps = {
-    students: {
-        name: "chenke"
-    }
+   studentsList:[]
 }
 
 export default Modal

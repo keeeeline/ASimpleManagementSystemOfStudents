@@ -5,85 +5,58 @@ import {observable, computed, action, autorun, reaction} from 'mobx';
 //2.缩进格式(over)
 //3.变量驼峰式命名(over)
 class DataStore {
-    @observable data = {
-        modalAdd: false,
-        modalDelete: false,
-        modalModify: false,
-        students: [{
-            name: 'chenke',
-            age: '23',
-            gender: '女'
-        }
-        ],
-        clickItem: -1
-    }
+    // modalType: null | delete | add | modify
+    @observable modalType=null;
+    @observable studentsList=[];
+    @observable studentIndex;
+
 
     //由组件A切换到不同的Modal
-    @action.bound addButtonClick(msg, index) {
-        let m = this.data.modalAdd
-        if (msg == "add") {
-            this.data.modalAdd = true
-        } else if (msg == "modify") {
-            this.data.modalModify = true;
-            this.data.clickItem = index
+    @action.bound showModal(msg, index) {
+        if (msg === "add") {
+            this.modalType = "add"
+        } else if (msg === "modify") {
+            this.modalType = "modify";
+            this.studentIndex = index
         } else {
-            this.data.modalDelete = true
-            this.data.module = "modalDelete"
-            this.data.clickItem = index
+            this.modalType = "delete"
+            this.studentIndex = index
         }
     }
 
     //由modal回到组件A
-    @action.bound back() {
-        this.data.modalAdd = false
-        this.data.modalDelete = false
-        this.data.modalModify = false
+    @action.bound onClose() {
+        this.modalType = null
     }
 
     //增加表单的提交与数据的更新
-    @action.bound addSubmit(event) {
-        let student = {
-            name: event.target.name.value,
-            age: event.target.age.value,
-            gender: event.target.gender.value
-        }
-        let students = this.data.students
-        students.push(student)
-        this.data.modalAdd = false
-        this.data.modalDelete = false
-        this.data.modalModify = false
-        this.data.students = students
-
+    @action.bound onAddSubmit(studentData) {
+        this.studentsList=this.studentsList.concat(studentData)
+        this.modalType = null;
+        this.updateLocalStorageData()
     }
 
     //表单条目的删除
-    @action.bound deleteSubmit(index) {
-        let students = this.data.students;
-        students.splice(index, 1)
-        this.data.modalAdd = false
-        this.data.modalDelete = false
-        this.data.modalModify = false
-        this.data.students = students
-        this.data.clickItem = -1
-
+    @action.bound onDeleteSubmit() {
+        this.studentsList.splice(this.studentIndex, 1);
+        this.modalType = null
+        this.updateLocalStorageData()
     }
 
     //表单条目的修改
-    @action.bound modifySubmit(index, e) {
-        let student = {
-            name: e.target.name.value,
-            age: e.target.age.value,
-            gender: e.target.gender.value
+    @action.bound onModifySubmit(studentData) {
+        this.studentsList[this.studentIndex] = studentData;
+        this.modalType = null
+        this.updateLocalStorageData()
+    }
+
+    //
+    updateLocalStorageData(){
+        let studentsList=JSON.stringify(this.studentsList);
+        if(studentsList!==localStorage.getItem("studentsList")){
+            localStorage.setItem("studentsList",studentsList)
         }
-        let students = this.data.students
-        students[index] = student
-        this.data.modalAdd = false
-        this.data.modalDelete = false
-        this.data.modalModify = false
-        this.data.students = students
-        this.data.clickItem = -1
     }
 }
 
-const data = new DataStore();
-export default data;
+export default DataStore;

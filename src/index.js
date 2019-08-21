@@ -4,41 +4,49 @@ import Modal from './modal.jsx'
 import StudentsTable from './table.jsx'
 import ModalAdd from './modalAdd.jsx'
 import {observer, Provider, inject} from 'mobx-react';
-import data from './store.js'          //new
+import DataStore from './store.js'          //new
 
+@inject("data")
 @observer
     //1.dom块直接return回去(over)
     //@inject('data')
 class Time extends React.Component {
     constructor(props) {
         super(props)
-        this.showModule = this.showModule.bind(this)
     }
 
-    showModule() {
-        let visible = "block"
-        if (data.data.modalAdd) {
-            return <ModalAdd visible={visible} back={data.back} addSubmit={data.addSubmit}/>
-        } else if (data.data.modalDelete) {
-            return <Modal visible={visible} ModOrDel={"delete"} back={data.back} deleteSubmit={data.deleteSubmit}
-                          indexOfStu={data.data.clickItem} students={data.data.students[data.data.clickItem]}/>
-        } else if (data.data.modalModify) {
-            return <Modal visible={visible} ModOrDel={"modify"} back={data.back} modifySubmit={data.modifySubmit}
-                          indexOfStu={data.data.clickItem} students={data.data.students[data.data.clickItem]}/>
+    renderModal() {
+        let source=this.props.data;
+        if (source.modalType === "add") {
+            return <ModalAdd  onClose={source.onClose} onSubmit={source.onAddSubmit} />
+        } else if (source.modalType === "delete") {
+            return <Modal  modifyOrDelete={"delete"} onClose={source.onClose} onSubmit={source.onDeleteSubmit}
+                           {...source.studentsList[source.studentIndex]} />
+        } else if (source.modalType === "modify") {
+            return <Modal  modifyOrDelete={"modify"} onClose={source.onClose} onSubmit={source.onModifySubmit}
+                           {...source.studentsList[source.studentIndex]} />
         }
     }
 
     render() {
         return (
             <div>
-                <StudentsTable addButtonClick={data.addButtonClick} students={data.data.students}/>
+                <StudentsTable showModal={this.props.data.showModal} studentsList={this.props.data.studentsList}/>
                 {
-                    this.showModule()
+                    this.renderModal()
                 }
             </div>
         )
     }
 }
 
+const source=new DataStore()
+//read localStorage
+function getLocalStorageData(){
+    if(localStorage.getItem("studentsList")){
+        source.studentsList=JSON.parse(localStorage.getItem("studentsList"));
+    }
+}
+getLocalStorageData()
 
-ReactDOM.render(<Time/>, document.getElementById("mainPart"))
+ReactDOM.render(<Provider data={source}><Time/></Provider>, document.getElementById("mainPart"))
